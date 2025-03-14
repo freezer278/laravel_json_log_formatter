@@ -1,9 +1,12 @@
 # Package to quickly set up log formatter in json format that is supported by elk stack
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vmorozov/laravel-json-log-formatter.svg?style=flat-square)](https://packagist.org/packages/vmorozov/laravel-json-log-formatter)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/vmorozov/laravel-json-log-formatter/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/vmorozov/laravel-json-log-formatter/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/vmorozov/laravel-json-log-formatter/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/vmorozov/laravel-json-log-formatter/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/vmorozov/laravel-json-log-formatter.svg?style=flat-square)](https://packagist.org/packages/vmorozov/laravel-json-log-formatter)
+[//]: # ([![Latest Version on Packagist]&#40;https://img.shields.io/packagist/v/vmorozov/laravel-json-log-formatter.svg?style=flat-square&#41;]&#40;https://packagist.org/packages/vmorozov/laravel-json-log-formatter&#41;)
+
+[//]: # ([![GitHub Tests Action Status]&#40;https://img.shields.io/github/actions/workflow/status/vmorozov/laravel-json-log-formatter/run-tests.yml?branch=main&label=tests&style=flat-square&#41;]&#40;https://github.com/vmorozov/laravel-json-log-formatter/actions?query=workflow%3Arun-tests+branch%3Amain&#41;)
+
+[//]: # ([![GitHub Code Style Action Status]&#40;https://img.shields.io/github/actions/workflow/status/vmorozov/laravel-json-log-formatter/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square&#41;]&#40;https://github.com/vmorozov/laravel-json-log-formatter/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain&#41;)
+
+[//]: # ([![Total Downloads]&#40;https://img.shields.io/packagist/dt/vmorozov/laravel-json-log-formatter.svg?style=flat-square&#41;]&#40;https://packagist.org/packages/vmorozov/laravel-json-log-formatter&#41;)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 

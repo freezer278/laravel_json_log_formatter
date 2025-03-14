@@ -10,7 +10,7 @@ class LaravelJsonLogFormatterServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('json_log_formatter')
-            ->hasConfigFile();
+            ->name('laravel-json-log-formatter')
+            ->hasConfigFile('json_log_formatter');
     }
 }

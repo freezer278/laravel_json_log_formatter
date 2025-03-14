@@ -23,37 +23,28 @@ You can install the package via composer:
 composer require vmorozov/laravel-json-log-formatter
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-json-log-formatter-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="laravel-json-log-formatter-config"
 ```
 
-This is the contents of the published config file:
+ Add the following to your `config/logging.php` file to the channel that you want in json format:
 
 ```php
-return [
-];
+'formatter' => \VMorozov\LaravelJsonLogFormatter\JsonLogsFormatter::class,
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-json-log-formatter-views"
-```
-
-## Usage
-
+for example for 'daily' channel it should look like this:
 ```php
-$laravelJsonLogFormatter = new VMorozov\LaravelJsonLogFormatter();
-echo $laravelJsonLogFormatter->echoPhrase('Hello, VMorozov!');
+'daily' => [
+    'driver' => 'daily',
+    'path' => storage_path('logs/laravel.log'),
+    'level' => env('LOG_LEVEL', 'debug'),
+    'days' => env('LOG_DAILY_DAYS', 15),
+    'replace_placeholders' => true,
+    'formatter' => \VMorozov\LaravelJsonLogFormatter\JsonLogsFormatter::class,
+],
 ```
 
 ## Testing

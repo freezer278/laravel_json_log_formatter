@@ -26,7 +26,7 @@ composer require vmorozov/laravel-json-log-formatter
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-json-log-formatter-config"
+php artisan vendor:publish --tag="json-log-formatter-config"
 ```
 
  Add the following to your `config/logging.php` file to the channel that you want in json format:

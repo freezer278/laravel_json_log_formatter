@@ -20,12 +20,10 @@ class JsonLogsFormatter extends NormalizerFormatter
             'timestamp' => $recordData['datetime'],
             'version' => config('json_log_formatter.schema_version', 1),
             'application' => config('json_log_formatter.app_name', 'laravel'),
+            'environment' => config('json_log_formatter.app_env',  $recordData['channel'] ?? 'production'),
         ];
         if (isset($recordData['message'])) {
             $message['message'] = $recordData['message'];
-        }
-        if (isset($recordData['channel'])) {
-            $message['environment'] = $recordData['channel'];
         }
         if (isset($recordData['level_name'])) {
             $message['level'] = strtolower($recordData['level_name']);
